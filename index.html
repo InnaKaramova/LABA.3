@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <script src = "code.js"></script>
+  <title>document</title>
+</head>
+<body>
+<ul style="list-style-type:none"> <!--убираем точки у списка-->
+  <li>
+    <button class = "maketable" onclick = "make(); toallow()">
+    Создать таблицу
+    </button>
+  </li>
+  <li> <!--disabled-псевдокласс-отключенный элемент-->
+    <button disabled id = 'add' onclick = "addrow()">Добавить строку
+    </button>
+  </li>
+  <li>
+    <button disabled id = 'delete' onclick = "deleterow()">Удалить строку
+    </button>
+    <br>
+    <label for ='number'>Номер строки для удаления</label><!--подпись к окну ввода-->
+    <br>
+    <input disabled id = 'number' type = "number" value = "null">
+  </li>
+</ul>
+</body>
+
+</html>
